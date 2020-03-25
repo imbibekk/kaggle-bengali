@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 
 ## Prepare dataset
-The *data* folder already contains `train.csv` and the splits: `train_b_fold1_184855.npy` and `valid_b_fold1_15985.npy` used for training. So we only need to download the training images; will use the *feather* version of the dataset for faster loading, which can be downloaded via following commands
+The *data* folder already contains `train.csv` and the splits: `train_b_fold1_184855.npy` and `valid_b_fold1_15985.npy` used for training. So you only need to download the training images; will use the *feather* version of the dataset for faster loading, which can be downloaded via following commands
 
 ```
 $ kaggle datasets download -d corochann/bengaliaicv19feather
@@ -63,7 +63,7 @@ python train.py --model_name effnetb3
 ```
 Training with `GridMask` augmentation for `N` epochs. Training has to be stopped *manually* after `N` epochs
 ```
-python train.py --model_name effnetb3 --use_gridmask
+python train.py --model_name effnetb3 --use_gridmask --optimizer_name AdamW
 ```
 
 ### Take SWA
