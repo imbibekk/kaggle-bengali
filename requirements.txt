@@ -1,0 +1,7 @@
+kaggle
+tqdm
+pandas
+torch
+torchvision
+albumentations
+efficientnet_pytorch==0.6.3
