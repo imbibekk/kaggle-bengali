@@ -26,8 +26,8 @@ class Serex50_Net(nn.Module):
     
     def forward(self, x):
         batch_size,C,H,W = x.shape
-        if (H,W) !=(128,128):
-            x = F.interpolate(x,size=(128,128), mode='bilinear',align_corners=False)
+        #if (H,W) !=(128,128):
+        #    x = F.interpolate(x,size=(128,128), mode='bilinear',align_corners=False)
             
         x = self.rgb(x)
         x = self.block0(x)
