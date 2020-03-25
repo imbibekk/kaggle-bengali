@@ -41,7 +41,7 @@ data
 ## Training
 The training was done using `se_resnext50_32x4d` at original size of `137x236` and `efficient-netb3` at image size of `224x224`
 
-The training followed the following strategy:
+The training was done using the following strategy:
 
 
 * train model with with only [cutmix](https://arxiv.org/abs/1905.04899) for `n` epochs
