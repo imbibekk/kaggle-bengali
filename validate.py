@@ -179,7 +179,7 @@ if __name__ == '__main__':
                     help='Choose GPU to use. This only support single GPU')
     parser.add_argument('--data_dir', default='./data',
                     help='datasest directory')
-    parser.add_argument('--df_path', default='./data/train_sksplits.csv',
+    parser.add_argument('--df_path', default='./data/train.csv',
                     help='df_path')                 
     parser.add_argument('--batch_size', type=int, default=40, 
                     help='batch size')
